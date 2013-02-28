@@ -136,6 +136,22 @@ $bot = Cinch::Bot.new do
   end
 
   #
+  # Logical
+  #
+  on :message, /\blogical\b/i, do |m|
+    message = [
+      "http://logicalawesome.com/logical_awesome.jpg",
+      "http://i727.photobucket.com/albums/ww271/Bonoa/spock-logic.jpg",
+      "http://trinities.org/blog/wp-content/uploads/logic-spock.jpg",
+      "http://vulcanstev.files.wordpress.com/2010/05/trek-spock-planning.jpg",
+      "http://fc04.deviantart.net/fs70/f/2012/018/3/d/spock_approves_by_kit_kat1982-d4mr6u1.jpg",
+      "http://cdn.memegenerator.net/instances/400x/31238697.jpg",
+      "http://i653.photobucket.com/albums/uu257/markus69_bucket/Spock.jpg",
+    ]
+    m.reply message.sample
+  end
+
+  #
   # Illogical
   #
   on :message, /illogical/i do |m|
@@ -147,7 +163,8 @@ $bot = Cinch::Bot.new do
       "http://roflrazzi.files.wordpress.com/2011/01/funny-celebrity-pictures-karaoke.jpg",
       "http://i13.photobucket.com/albums/a292/macota/MCCOYGOBLET.jpg",
       "http://spike.mtvnimages.com/images/import/blog//1/8/7/5/1875583/200905/1242167094687.jpg",
-      "http://randomoverload.com/wp-content/uploads/2010/12/fc5558bae4issors.jpg.jpg"
+      "http://randomoverload.com/wp-content/uploads/2010/12/fc5558bae4issors.jpg.jpg",
+      "http://25.media.tumblr.com/vVmbDWseNqfu8w069WO5RISVo1_500.jpg",
     ]
     m.reply message.sample
   end
