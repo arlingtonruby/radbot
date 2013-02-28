@@ -78,7 +78,7 @@ $bot = Cinch::Bot.new do
   #
   # Haters Plugin
   #
-  on :message, /.*hater(z|s)?.*/i do |m|
+  on :message, /hater(z|s)?/i do |m|
     images = [
       "http://i.imgur.com/XaZRf.gif",
       "http://i.imgur.com/imPCK.gif",
@@ -98,7 +98,7 @@ $bot = Cinch::Bot.new do
   #
   # Coffee Plugin
   #
-  on :message, /.*coffee.*/ do |m|
+  on :message, /coffee/ do |m|
     message = [
       [:reply, "Hey guys, I like coffee!"],
       [:reply, "Yay!"],
@@ -131,14 +131,14 @@ $bot = Cinch::Bot.new do
   #
   # Cray-cray
   #
-  on :message, /.*(crazy|cray).*/i do |m|
+  on :message, /(crazy|cray)/i do |m|
     m.reply "http://i.imgur.com/hycIuKc.jpg"
   end
 
   #
   # Illogical
   #
-  on :message, /.*(illogical).*/i do |m|
+  on :message, /illogical/i do |m|
     message = [
       "http://www.katzy.dsl.pipex.com/Smileys/illogical.gif",
       "http://icanhascheezburger.files.wordpress.com/2010/08/e95f76c6-469b-486e-9d18-b2c600ff7ab6.jpg",
@@ -155,20 +155,20 @@ $bot = Cinch::Bot.new do
   #
   # Gravity Falls Plugin
   #
-  on :message, /.*(puke).*/i do |m|
+  on :message, /puke/i do |m|
     m.reply "http://i.imgur.com/G0Z36.gif"
   end
-  on :message, /.*(attack).*/i do |m|
+  on :message, /attack/i do |m|
     m.reply "http://i.imgur.com/xXsO4.gif"
   end
-  on :message, /.*(legal).*/i do |m|
+  on :message, /legal/i do |m|
     m.reply "http://i.imgur.com/Kmulu.gif"
   end
 
-  on :message, /.*(snuggle).*/i do |m|
+  on :message, /snuggle/i do |m|
     m.reply "http://i.imgur.com/TaWjH.gif"
   end
-  on :message, /.*(whee).*/i do |m|
+  on :message, /whee/i do |m|
     message = [
       "http://i.imgur.com/ZwzU3.gif",
       "http://i.imgur.com/QAJlS.gif",
@@ -183,14 +183,14 @@ $bot = Cinch::Bot.new do
   #
   # I hate plugin
   #
-  on :message, /.*(i hate).*/i do |m|
+  on :message, /i hate/i do |m|
     m.reply "http://i.imgur.com/ZrN7c.jpg"
   end
 
   #
   # I sad plugin
   #
-  on :message, /.*(makes me sad).*/i do |m|
+  on :message, /makes me sad/i do |m|
     m.reply "http://i.imgur.com/XEC69.gif"
   end
 
